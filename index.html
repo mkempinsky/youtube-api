@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+		<div class="wrap">
+			<div id="youtube_videos">
+				<section class="info-wrap">
+				<div class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/3/34/YouTube_logo_%282017%29.png" /></div>
+</section>
+				<section class="video-wrap">
+					<div id="player"></div>	
+					<h1 class="video_title"></h1>
+				</section>
+				<section class="list-wrap">
+					<h3>Videos</h3>
+					<hr>
+				   <label for="search-text">Search the list</label>
+					<input type="text" id="search-text" placeholder="search" class="search-box">
+					<select name="category" id="filter">
+				        <option selected="selected" value="">View All Videos</option>
+				        <option value="music">Music</option>
+                <option value="movies">Movies</option>
+                <option value="tv">Television</option>
+				      </select> 
+					<span class="list-count"></span>
+					<span class="order_list"><i class="fa fa-angle-up"></i> <i class="fa fa-angle-down"></i></span>
+					<ul id="list">
+					</ul>
+				</section>
+			</div>
+		</div>
+	<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
